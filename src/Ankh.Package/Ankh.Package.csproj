@@ -185,7 +185,6 @@
     <Content Include="Gui\menu\AddUrl.png" />
     <Content Include="Gui\menu\CopyUrlToClipboard.png" />
     <Content Include="Gui\menu\Export.png" />
-    <Content Include="Gui\menu\IssueRepository.png" />
     <Content Include="Gui\menu\Lock.png" />
     <Content Include="Gui\menu\MakeDirectory.png" />
     <Content Include="Gui\menu\Merge.png" />
@@ -251,10 +250,6 @@
     <ProjectReference Include="..\Ankh.Diff\Ankh.Diff.csproj">
       <Project>{62F97060-6A9E-477D-B15B-E1A1F5320039}</Project>
       <Name>Ankh.Diff</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Ankh.ExtensionPoints\Ankh.ExtensionPoints.csproj">
-      <Project>{B7168874-E05E-458D-95CC-5D7BBC243986}</Project>
-      <Name>Ankh.ExtensionPoints</Name>
     </ProjectReference>
     <ProjectReference Include="..\Ankh.Ids\Ankh.Ids.csproj">
       <Project>{61D343CF-77BA-4EF2-96F5-E0D4EFD04844}</Project>

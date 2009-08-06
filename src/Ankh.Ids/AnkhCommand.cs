@@ -285,6 +285,5 @@ namespace Ankh
         MoveToIgnoreChangeList,
         RemoveFromChangeList,
 
-        SolutionIssueTrackerSetup,
     }
 }

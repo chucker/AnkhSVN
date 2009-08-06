@@ -19,7 +19,6 @@ using System.Collections.Generic;
 using System.Text;
 using System.Windows.Forms;
 using Ankh.VS;
-using Microsoft.Win32;
 
 namespace Ankh.UI
 {
@@ -48,12 +47,5 @@ namespace Ankh.UI
         AmbientProperties AmbientProperties { get; }
 
         bool LoadUserProperties(string streamName);
-
-        // Summary:
-        //     Gets the root registry key of the current Visual Studio registry hive.
-        //
-        // Returns:
-        //     The root Microsoft.Win32.RegistryKey of the Visual Studio registry hive.
-        RegistryKey ApplicationRegistryRoot { get; }
     }
 }
