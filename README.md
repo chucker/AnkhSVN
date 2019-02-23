@@ -13,3 +13,5 @@ It is assumed that **Ankh.VS.VersionThunk** and **Ankh.VS.VersionThunk.V4** orig
 ## Building
 
 VS _should_ mostly figure out how to gather the necessary references through NuGet, with one notable exception: **Ankh.BitmapExtractor** requires you to manually fetch a few files from elsewhere, probably for licensing reasons (as also mentioned in the comment in its **Program.cs**).
+
+After building, **Ankh.VS15Package\bin\Debug** contains (among many other files) a `.vsix` that will install to VS 2017 and 2019.
