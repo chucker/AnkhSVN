@@ -12,11 +12,14 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Ankh.GenPkgDef</RootNamespace>
     <AssemblyName>Ankh.GenPkgDef</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>Svn</SccProjectName>
     <SccLocalPath>Svn</SccLocalPath>
     <SccAuxPath>Svn</SccAuxPath>
     <SccProvider>SubversionScc</SccProvider>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
@@ -48,24 +51,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="$(MsVsShellAssembly)" />
-    <Reference Include="Microsoft.VisualStudio.Shell.Immutable.10.0" Condition="'$(UseVsSdkVersion)' &gt;= '10.0' and '$(UseVsSdkVersion)' &lt; '15.0'">
-      <Visible>false</Visible>
-    </Reference>
-    <Reference Include="Microsoft.VisualStudio.Shell.Immutable.11.0" Condition="'$(UseVsSdkVersion)' &gt;= '11.0' and '$(UseVsSdkVersion)' &lt; '15.0'">
-      <Visible>false</Visible>
-    </Reference>
-    <Reference Include="Microsoft.VisualStudio.Shell.Immutable.12.0" Condition="'$(UseVsSdkVersion)' &gt;= '12.0' and '$(UseVsSdkVersion)' &lt; '15.0'">
-      <Visible>false</Visible>
-    </Reference>
-    <Reference Include="Microsoft.VisualStudio.Shell.Immutable.14.0" Condition="'$(UseVsSdkVersion)' &gt;= '14.0' and '$(UseVsSdkVersion)' &lt; '15.0'">
-      <Visible>false</Visible>
-    </Reference>
-    <Reference Include="Microsoft.VisualStudio.Shell.Framework" Condition="'$(UseVsSdkVersion)' &gt;= '15.0'">
-      <Visible>false</Visible>
-    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Shell.15.0" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="PkgDefContext.cs" />
@@ -78,6 +68,26 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.SDK.EmbedInteropTypes">
+      <Version>15.0.27</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Shell.15.0">
+      <Version>16.0.28602-pre</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Shell.Immutable.10.0">
+      <Version>15.0.25415</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Shell.Immutable.11.0">
+      <Version>15.0.25415</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Shell.Immutable.12.0">
+      <Version>15.0.25415</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Shell.Immutable.14.0">
+      <Version>15.0.25405</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

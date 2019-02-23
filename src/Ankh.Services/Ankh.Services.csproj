@@ -12,6 +12,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Ankh</RootNamespace>
     <AssemblyName>Ankh.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>Ankh.Services.snk</AssemblyOriginatorKeyFile>
@@ -51,7 +52,7 @@
     <Reference Include="Microsoft.VisualStudio.Shell.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
     <Reference Include="Microsoft.VisualStudio.Shell.Interop.8.0, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
     <Reference Include="Microsoft.VisualStudio.TextManager.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-    <Reference Include="Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" Condition="'$(UseVsSdkVersion)' &gt; '10.0'" >
+    <Reference Include="Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" Condition="'$(UseVsSdkVersion)' &gt; '10.0'">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>True</EmbedInteropTypes>
       <HintPath>..\Ankh.VS.VersionThunk\Embed\Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll</HintPath>
@@ -286,9 +287,9 @@
       <Project>{61D343CF-77BA-4EF2-96F5-E0D4EFD04844}</Project>
       <Name>Ankh.Ids</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Ankh.VS.VersionThunk\Ankh.VS.VersionThunk.csproj">
-      <Project>{06d68ab0-ed0b-4fc6-b085-318f9c253160}</Project>
-      <Name>Ankh.VS.VersionThunk</Name>
+    <ProjectReference Include="..\Ankh.VS.VersionThunk\Ankh.VS.VersionThunk.V4.csproj">
+      <Project>{28f7c8b8-bf28-4429-bb67-da8fe737fb9e}</Project>
+      <Name>Ankh.VS.VersionThunk.V4</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
