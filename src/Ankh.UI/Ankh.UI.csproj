@@ -1359,7 +1359,7 @@
       <Version>15.0.27</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Shell.15.0">
-      <Version>16.0.28602-pre</Version>
+      <Version>15.9.28307</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
